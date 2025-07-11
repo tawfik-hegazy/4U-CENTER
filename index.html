@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>استمارة التسجيل - سنتر 4U</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركز 4U التعليمي</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="form-wrapper">
-    <div class="form-header">📘 استمارة تسجيل الطالب - سنتر 4U</div>
+  <div class="container">
+    <img src="logo.png" alt="شعار مركز 4U" class="logo" />
+    <h1>استمارة تسجيل الطالب</h1>
 
     <form action="https://formspree.io/f/xgvygpvp" method="POST">
-  <label for="studentName">اسم الطالب</label>
-  <input type="text" id="studentName" name="اسم الطالب" required>
+      <label>اسم الطالب</label>
+      <input type="text" name="studentName" required />
 
-  <label for="studentPhone">رقم تليفون الطالب</label>
-  <input type="tel" id="studentPhone" name="رقم تليفون الطالب" required>
+      <label>رقم تليفون الطالب</label>
+      <input type="tel" name="studentPhone" required />
 
-  <label for="parentPhone">رقم تليفون ولي الأمر</label>
-  <input type="tel" id="parentPhone" name="رقم تليفون ولي الأمر" required>
+      <label>رقم تليفون ولي الأمر</label>
+      <input type="tel" name="parentPhone" required />
 
-  <label for="subjects">المواد والمدرسين</label>
-  <textarea id="subjects" name="المواد والمدرسين" rows="4" required></textarea>
+      <label>المواد والمدرسين</label>
+      <textarea name="subjects" rows="4" required placeholder="مثال: فيزياء - مستر أحمد، كيمياء - مستر علي..."></textarea>
 
-  <button type="submit">إرسال البيانات</button>
-</form>
-
-
-    <div class="footer">جميع الحقوق محفوظة © سنتر 4U</div>
+      <button type="submit">إرسال</button>
+    </form>
   </div>
-
 </body>
 </html>
